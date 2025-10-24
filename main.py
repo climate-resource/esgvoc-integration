@@ -5,10 +5,10 @@ import esgvoc.api as ev
 
 def main():
     for dd in [
-        "activity",  # resolution not working because IDs aren't being parsed properly
+        "activity",
         "archive",
         "area_label",
-        # "experiment",  # can't get cross-references right
+        "experiment",
     ]:
         print(dd)
         ev_obj = ev.get_all_terms_in_data_descriptor(dd)
