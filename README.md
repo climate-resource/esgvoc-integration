@@ -53,6 +53,9 @@ uv run esgvoc get universe:activity: --select "id"
 # Get a list of everything in the universe's archive collection,
 # showing only the drs_name
 uv run esgvoc get universe:activity: --select "drs_name"
+
+# WIP: DRS stuff
+uv run esgvoc drsvalid cmip7 directory drs-specs/activity/institution/source/experiment/variant/region/variable/branding-suffix/grid/version --verbose
 ```
 
 ### Python script
