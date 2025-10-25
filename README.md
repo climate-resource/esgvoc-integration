@@ -54,8 +54,11 @@ uv run esgvoc get universe:activity: --select "id"
 # showing only the drs_name
 uv run esgvoc get universe:activity: --select "drs_name"
 
-# WIP: DRS stuff
-uv run esgvoc drsvalid cmip7 directory drs-specs/activity/institution/source/experiment/variant/region/variable/branding-suffix/grid/version --verbose
+# Validate a path against the DRS
+uv run esgvoc drsvalid cmip7 directory MIP-DRS7/CMIP/IPSL/DEMO/piControl/r1i1p1f1/global/tas/tavg-h2m-hxy-u/g99/20251031 --verbose
+
+# Validate a filename against the DRS
+uv run esgvoc drsvalid cmip7 filename tas_tavg-h2m-hxy-u_mon_global_g99_DEMO_historical_r1i1p1f1_185001-202112.nc --verbose
 ```
 
 ### Python script
