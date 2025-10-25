@@ -10,10 +10,11 @@ dependencies = [
     "icecream>=2.1.7",
     "jupyter-console>=6.6.3",
     "devtools>=0.12.2",
+    "pre-commit>=4.3.0",
 ]
 
 [[tool.uv.sources.esgvoc]]
 git = "https://github.com/znichollscr/esgf-vocab.git"
-rev = "30bc7b4de3965ea81a493681a1796ba0468d19a7"
+rev = "03de72e385803c736d161555ba174d222eb3a1b2"
 # path = "../esgf-vocab"
-# editable = true 
+# editable = true
