@@ -8,13 +8,13 @@ Testing of esgvoc full integration
 
 #### via UV
 
-```
+```sh
 uv sync
 ```
 
 #### via pip
 
-```
+```sh
 python3 -m venv venv
 source venv/bin/activate
 # or windows equivalent of the above
@@ -23,7 +23,7 @@ pip install -r requirements-locked.txt
 
 ### esgvoc
 
-```
+```sh
 uv run esgvoc config create cmip7-playground
 
 uv run esgvoc config switch cmip7-playground
@@ -44,7 +44,7 @@ uv run esgvoc install
 
 ### esgvoc CLI
 
-```
+```sh
 # Get a list of everything
 uv run esgvoc get ::
 
@@ -74,7 +74,7 @@ uv run esgvoc drsvalid cmip7 filename tas_tavg-h2m-hxy-u_mon_global_g99_DEMO_his
 
 ### Python script
 
-```
+```sh
 # Show how DRS can be parsed to get the member terms
 uv run python drs-parsing.py
 ```
