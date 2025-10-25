@@ -75,5 +75,11 @@ uv run esgvoc drsvalid cmip7 filename tas_tavg-h2m-hxy-u_mon_global_g99_DEMO_his
 ### Python script
 
 ```
-uv run python main.py
+# Show how DRS can be parsed to get the member terms
+uv run python drs-parsing.py
+```
+
+```
+# Print entries in a number of relevant collections
+uv run python print-collections.py
 ```
