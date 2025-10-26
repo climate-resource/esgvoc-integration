@@ -70,6 +70,9 @@ uv run esgvoc drsvalid cmip7 directory MIP-DRS7/CMIP7/CMIP/IPSL/DEMO/piControl/r
 
 # Validate a filename against the DRS
 uv run esgvoc drsvalid cmip7 filename tas_tavg-h2m-hxy-u_mon_global_g99_DEMO_historical_r1i1p1f1_185001-202112.nc --verbose
+
+# Export CMOR tables
+uv run esgvoc cmor-export-cvs-table
 ```
 
 ### Python script
