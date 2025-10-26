@@ -5,7 +5,7 @@ import esgvoc.api as ev
 
 def main():
     fail_if_empty = True
-    fail_if_empty = False
+    # fail_if_empty = False
 
     for collection in [
         "activity",

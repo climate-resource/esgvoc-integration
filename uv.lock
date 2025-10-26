@@ -201,7 +201,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "devtools", specifier = ">=0.12.2" },
-    { name = "esgvoc", git = "https://github.com/znichollscr/esgf-vocab.git?rev=03de72e385803c736d161555ba174d222eb3a1b2" },
+    { name = "esgvoc", git = "https://github.com/znichollscr/esgf-vocab.git?rev=25e57313e41405da307d08e961c579ec8087c3c4" },
     { name = "icecream", specifier = ">=2.1.7" },
     { name = "jupyter-console", specifier = ">=6.6.3" },
     { name = "pre-commit", specifier = ">=4.3.0" },
@@ -282,7 +282,7 @@ wheels = [
 [[package]]
 name = "esgvoc"
 version = "1.1.3"
-source = { git = "https://github.com/znichollscr/esgf-vocab.git?rev=03de72e385803c736d161555ba174d222eb3a1b2#03de72e385803c736d161555ba174d222eb3a1b2" }
+source = { git = "https://github.com/znichollscr/esgf-vocab.git?rev=25e57313e41405da307d08e961c579ec8087c3c4#25e57313e41405da307d08e961c579ec8087c3c4" }
 dependencies = [
     { name = "idna" },
     { name = "jinja2" },
