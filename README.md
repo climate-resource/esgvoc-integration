@@ -73,6 +73,8 @@ uv run esgvoc drsvalid cmip7 filename tas_tavg-h2m-hxy-u_mon_global_g99_DEMO_his
 
 # Export CMOR tables
 uv run esgvoc cmor-export-cvs-table
+# (or to a file)
+uv run esgvoc cmor-export-cvs-table --out-path cmor-cvs-example.json
 ```
 
 ### Python script
