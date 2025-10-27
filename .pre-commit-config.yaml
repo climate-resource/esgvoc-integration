@@ -51,4 +51,3 @@ repos:
         language: system
         require_serial: true
         pass_filenames: false
-        files: "cmor-cvs-table.json"
