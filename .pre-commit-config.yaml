@@ -43,3 +43,12 @@ repos:
       - id: uv-export
         name: export-requirements
         args: ["-o", "requirements-locked.txt", "--no-hashes", "--no-dev", "--no-emit-project"]
+  - repo: local
+    hooks:
+      - id: cmor-cvs-table
+        name: cmor-cvs-table
+        entry: uv run esgvoc cmor-export-cvs-table --out-path cmor-cvs-table.json
+        language: system
+        require_serial: true
+        pass_filenames: false
+        files: "cmor-cvs-table.json"

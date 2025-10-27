@@ -15,9 +15,11 @@ debugpy==1.8.17
 decorator==5.2.1
 devtools==0.12.2
 distlib==0.4.0
-esgvoc @ git+https://github.com/znichollscr/esgf-vocab.git@f44c636b2ea8465b7fd305e7e00cd01e9488809c
+esgvoc @ git+https://github.com/znichollscr/esgf-vocab.git@86412e104d61cb2acce346be839d755c5a806443
 executing==2.2.1
 filelock==3.20.0
+flexcache==0.3
+flexparser==0.4
 frozendict==2.4.6
 greenlet==3.2.4 ; platform_machine == 'AMD64' or platform_machine == 'WIN32' or platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'ppc64le' or platform_machine == 'win32' or platform_machine == 'x86_64'
 icecream==2.1.8
@@ -41,6 +43,7 @@ nodeenv==1.9.1
 packaging==25.0
 parso==0.8.5
 pexpect==4.9.0 ; sys_platform != 'emscripten' and sys_platform != 'win32'
+pint==0.25
 platformdirs==4.5.0
 pre-commit==4.3.0
 prompt-toolkit==3.0.52
