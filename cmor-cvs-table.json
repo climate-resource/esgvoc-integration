@@ -1,9 +1,9 @@
 {
     "CV": {
         "DRS": {
-            "directory_path_example": "MIP-DRS7/CMIP7/CMIP/IPSL/DEMO/historical/r1i1p1f1/global/mon/tas/tavg-h2m-hxy-u/g99/20251104",
+            "directory_path_example": "MIP-DRS7/CMIP7/CMIP/CCCma/CanESM6-MR/historical/r1i1p1f1/global/mon/tas/tavg-h2m-hxy-u/g99/20251104",
             "directory_path_template": "<drs_specs>/<mip_era>/<activity_id>/<institution_id>/<source_id>/<experiment_id>/<variant_label>/<region>/<frequency>/<variable_id>/<branding_suffix>/<grid_label>/<version>",
-            "filename_path_example": "tas_tavg-h2m-hxy-u_mon_global_g99_DEMO_historical_r1i1p1f1_185001-202112.nc",
+            "filename_path_example": "tas_tavg-h2m-hxy-u_mon_global_g99_CanESM6-MR_historical_r1i1p1f1_185001-202112.nc",
             "filename_path_template": "<variable_id>_<branding_suffix>_<frequency>_<region>_<grid_label>_<source_id>_<experiment_id>_<variant_label>[_<timeRange>].nc"
         },
         "activity_id": {
@@ -102,6 +102,7 @@
             "^i(?P<initialization_index>(\\d{4}\\d{2}[abcde]?|\\d+))$"
         ],
         "institution_id": {
+            "CCCma": "Canadian Centre for Climate Modelling and Analysis (CCCma)",
             "IPSL": "Institut Pierre-Simon Laplace"
         },
         "license": {
@@ -168,15 +169,15 @@
             "vertical_label"
         ],
         "source_id": {
-            "DEMO": {
+            "CanESM6-MR": {
                 "institution_id": [
-                    "IPSL"
+                    "CCCma"
                 ],
                 "label": "Context is wrong - label isn't really a name. Label for plots etc.",
                 "label_extended": "Context is wrong - extended label isn't really an extended name. Long label with full detail about the source",
                 "model_component": {},
-                "source": "DEMO:",
-                "source_id": "DEMO"
+                "source": "CanESM6-MR:",
+                "source_id": "CanESM6-MR"
             }
         },
         "temporal_label": {
@@ -186,7 +187,7 @@
             "^hdl:(?P<handle_dot_net_prefix>21.14107)/(?P<uuid>[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12})$"
         ],
         "variable_id": {
-            "tas": "Data reference syntax (DRS) initially designed for use with CMIP7"
+            "tas": "Air temperature measured at 2m above the Earth's surface."
         },
         "variant_label": [
             "^r(?P<realization_index>\\d+)i(?P<initialization_index>(\\d{4}\\d{2}[abcde]?|\\d+))p(?P<physics_index>\\d+)f(?P<forcing_index>\\d+)$"
