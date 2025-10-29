@@ -1,0 +1,465 @@
+{
+    "$id": "https://stac-extensions.github.io/cmip7/v3.0.0/schema.json#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "asset_fields": {
+            "$comment": " Don't require fields here, do that above in the corresponding schema.",
+            "properties": {
+                "cmip7:tracking_id": {
+                    "pattern": "^hdl:(?P<handle_dot_net_prefix>21.14107)/(?P<uuid>[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12})$",
+                    "type": "string"
+                },
+                "protocol": {
+                    "enum": [
+                        "http",
+                        "https",
+                        "globus",
+                        "gridftp",
+                        "kerchunk",
+                        "netcdfsubset",
+                        "opendap",
+                        "wms",
+                        "wps",
+                        "s3"
+                    ],
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "item_fields": {
+            "$comment": " Don't require fields here, do that above in the corresponding schema.",
+            "additionalProperties": false,
+            "patternProperties": {
+                "^(?!cmip7:)": {}
+            },
+            "properties": {
+                "cmip7:contributor": {
+                    "enum": [
+                        "CCCma",
+                        "IPSL"
+                    ],
+                    "type": "string"
+                },
+                "cmip7:conventions": {
+                    "items": {
+                        "minItems": 1,
+                        "pattern": "^CF-(?P<version>\\d+\\.\\d+)$",
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "cmip7:data_specs_version": {
+                    "enum": [
+                        "MIPDS7-2025p10p1"
+                    ],
+                    "type": "string"
+                },
+                "cmip7:directory_date": {
+                    "pattern": "^\\d{4}\\d{2}\\d{2}$",
+                    "type": "string"
+                },
+                "cmip7:experiment": {
+                    "enum": [
+                        "historical",
+                        "piControl",
+                        "piControl-spinup"
+                    ],
+                    "type": "string"
+                },
+                "cmip7:forcing_index": {
+                    "pattern": "^f(?P<forcing_index>\\d+)$",
+                    "type": "integer"
+                },
+                "cmip7:frequency": {
+                    "enum": [
+                        "mon"
+                    ],
+                    "type": "string"
+                },
+                "cmip7:grid": {
+                    "enum": [
+                        "g99"
+                    ],
+                    "type": "string"
+                },
+                "cmip7:initialization_index": {
+                    "pattern": "^i(?P<initialization_index>(\\d{4}\\d{2}[abcde]?|\\d+))$",
+                    "type": "integer"
+                },
+                "cmip7:license": {
+                    "enum": [
+                        "CC-BY-4-0",
+                        "CC0-1-0"
+                    ],
+                    "type": "string"
+                },
+                "cmip7:nominal_resolution": {
+                    "enum": [
+                        "100-km"
+                    ],
+                    "type": "string"
+                },
+                "cmip7:physics_index": {
+                    "pattern": "^p(?P<physics_index>\\d+)$",
+                    "type": "integer"
+                },
+                "cmip7:pid": {
+                    "pattern": "^hdl:(?P<handle_dot_net_prefix>21.14107)/(?P<uuid>[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12})$",
+                    "type": "string"
+                },
+                "cmip7:product": {
+                    "enum": [
+                        "model-output"
+                    ],
+                    "type": "string"
+                },
+                "cmip7:realization_index": {
+                    "pattern": "^r(?P<realization_index>\\d+)$",
+                    "type": "integer"
+                },
+                "cmip7:realm": {
+                    "items": {
+                        "enum": [
+                            "atmos"
+                        ],
+                        "minItems": 1,
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "cmip7:source": {
+                    "enum": [
+                        "CanESM6-MR"
+                    ],
+                    "type": "string"
+                },
+                "cmip7:variable": {
+                    "enum": [
+                        "tas"
+                    ],
+                    "type": "string"
+                },
+                "cmip7:variable_cf_standard_name": {
+                    "enum": [
+                        "air_temperature"
+                    ],
+                    "type": "string"
+                },
+                "cmip7:variable_long_name": {
+                    "enum": [
+                        null
+                    ],
+                    "type": "string"
+                },
+                "cmip7:variable_units": {
+                    "enum": [
+                        "K"
+                    ],
+                    "type": "string"
+                },
+                "cmip7:variant_label": {
+                    "pattern": "^r(?P<realization_index>\\d+)i(?P<initialization_index>(\\d{4}\\d{2}[abcde]?|\\d+))p(?P<physics_index>\\d+)f(?P<forcing_index>\\d+)$",
+                    "type": "string"
+                },
+                "latest": {
+                    "type": "boolean"
+                },
+                "retracted": {
+                    "type": "boolean"
+                },
+                "size": {
+                    "minimum": 0,
+                    "type": "integer"
+                }
+            },
+            "type": "object"
+        },
+        "require_any": {
+            "$comment": "Only used for Collection summarizes.",
+            "minProperties": 1,
+            "type": "object"
+        },
+        "require_asset_fields": {
+            "$comment": "Please list all fields here so that we can force the existence of one of them in other parts of the schemas.",
+            "allOf": [
+                {
+                    "required": [
+                        "created"
+                    ]
+                },
+                {
+                    "required": [
+                        "file:checksum"
+                    ]
+                },
+                {
+                    "required": [
+                        "file:size"
+                    ]
+                },
+                {
+                    "required": [
+                        "protocol"
+                    ]
+                },
+                {
+                    "required": [
+                        "updated"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:tracking_id"
+                    ]
+                }
+            ]
+        },
+        "require_item_fields": {
+            "$comment": "Please list all fields here so that we can force the existence of one of them in other parts of the schemas.",
+            "allOf": [
+                {
+                    "required": [
+                        "created"
+                    ]
+                },
+                {
+                    "required": [
+                        "end_datetime"
+                    ]
+                },
+                {
+                    "required": [
+                        "latest"
+                    ]
+                },
+                {
+                    "required": [
+                        "retracted"
+                    ]
+                },
+                {
+                    "required": [
+                        "size"
+                    ]
+                },
+                {
+                    "required": [
+                        "start_datetime"
+                    ]
+                },
+                {
+                    "required": [
+                        "title"
+                    ]
+                },
+                {
+                    "required": [
+                        "updated"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:contributor"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:conventions"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:data_specs_version"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:directory_date"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:experiment"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:forcing_index"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:frequency"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:grid"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:initialization_index"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:license"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:nominal_resolution"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:physics_index"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:pid"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:product"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:realization_index"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:realm"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:source"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:source"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:variable"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:variable_cf_standard_name"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:variable_long_name"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:variable_units"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:variant_label"
+                    ]
+                }
+            ]
+        }
+    },
+    "description": "STAC CMIP7 Extension for STAC Items and STAC Collection Summaries.",
+    "oneOf": [
+        {
+            "$comment": "This is the schema for STAC Items.",
+            "properties": {
+                "assets": {
+                    "additionalProperties": {
+                        "allOf": [
+                            {
+                                "$ref": "#/definitions/require_asset_fields"
+                            },
+                            {
+                                "$ref": "https://stac-extensions.github.io/file/v2.1.0/schema.json#/definitions/fields"
+                            },
+                            {
+                                "$ref": "#/definitions/asset_fields"
+                            }
+                        ]
+                    },
+                    "type": "object"
+                },
+                "collection": {
+                    "const": "CMIP7"
+                },
+                "id": {
+                    "pattern": "^CMIP7(\\\\.[A-Za-z0-9-]+){10}$",
+                    "type": "string"
+                },
+                "properties": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/require_item_fields"
+                        },
+                        {
+                            "$ref": "#/definitions/item_fields"
+                        }
+                    ]
+                },
+                "type": {
+                    "const": "Feature"
+                }
+            },
+            "required": [
+                "collection"
+            ],
+            "type": "object"
+        },
+        {
+            "$comment": "This is the schema for STAC Collections, or more specifically only Collection Summaries in this case. By default, only checks the existence of the properties, but not the schema of the summaries.",
+            "properties": {
+                "summaries": {
+                    "$ref": "#/definitions/require_any"
+                },
+                "type": {
+                    "const": "Collection"
+                }
+            },
+            "required": [
+                "type",
+                "summaries"
+            ],
+            "type": "object"
+        }
+    ],
+    "properties": {
+        "stac_extensions": {
+            "allOf": [
+                {
+                    "contains": {
+                        "const": "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+                    }
+                },
+                {
+                    "contains": {
+                        "const": "https://stac-extensions.github.io/cmip7/v3.0.0/schema.json"
+                    }
+                }
+            ],
+            "type": "array"
+        }
+    },
+    "required": [
+        "stac_extensions"
+    ],
+    "title": "CMIP7 Extension",
+    "type": "object"
+}

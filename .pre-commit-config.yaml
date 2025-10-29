@@ -51,3 +51,9 @@ repos:
         language: system
         require_serial: true
         pass_filenames: false
+      - id: stac-schema-json
+        name: stac-schema-json
+        entry: uv run python json-schema-generation.py
+        language: system
+        require_serial: true
+        pass_filenames: false
