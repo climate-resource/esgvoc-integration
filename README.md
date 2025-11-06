@@ -66,10 +66,10 @@ uv run esgvoc get universe:activity: --select "id"
 uv run esgvoc get universe:activity: --select "drs_name"
 
 # Validate a path against the DRS
-uv run esgvoc drsvalid cmip7 directory MIP-DRS7/CMIP7/CMIP/IPSL/DEMO/piControl/r1i1p1f1/global/mon/tas/tavg-h2m-hxy-u/g99/20251031 --verbose
+uv run esgvoc drsvalid cmip7 directory MIP-DRS7/CMIP7/CMIP/CCCma/CanESM6-MR/piControl/r1i1p1f1/global/mon/tas/tavg-h2m-hxy-u/g99/20251031 --verbose
 
 # Validate a filename against the DRS
-uv run esgvoc drsvalid cmip7 filename tas_tavg-h2m-hxy-u_mon_global_g99_DEMO_historical_r1i1p1f1_185001-202112.nc --verbose
+uv run esgvoc drsvalid cmip7 filename tas_tavg-h2m-hxy-u_mon_global_g99_CanESM6-MR_historical_r1i1p1f1_185001-202112.nc --verbose
 
 # Export CMOR tables
 uv run esgvoc cmor-export-cvs-table
