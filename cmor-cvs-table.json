@@ -1,9 +1,9 @@
 {
     "CV": {
         "DRS": {
-            "directory_path_example": "MIP-DRS7/CMIP7/CMIP/CCCma/CanESM6-MR/historical/r1i1p1f1/global/mon/tas/tavg-h2m-hxy-u/g99/20251104",
+            "directory_path_example": "MIP-DRS7/CMIP7/CMIP/CCCma/CanESM6-MR/historical/r1i1p1f1/glb/mon/tas/tavg-h2m-hxy-u/g99/20251104",
             "directory_path_template": "<drs_specs>/<mip_era>/<activity_id>/<institution_id>/<source_id>/<experiment_id>/<variant_label>/<region>/<frequency>/<variable_id>/<branding_suffix>/<grid_label>/<version>",
-            "filename_path_example": "tas_tavg-h2m-hxy-u_mon_global_g99_CanESM6-MR_historical_r1i1p1f1_185001-202112.nc",
+            "filename_path_example": "tas_tavg-h2m-hxy-u_mon_glb_g99_CanESM6-MR_historical_r1i1p1f1_185001-202112.nc",
             "filename_path_template": "<variable_id>_<branding_suffix>_<frequency>_<region>_<grid_label>_<source_id>_<experiment_id>_<variant_label>[_<timeRange>].nc"
         },
         "activity_id": {
@@ -135,7 +135,7 @@
             "atmos": "Dataset which applies (or mostly applies) to or is reported in the atmosphere part of the earth system."
         },
         "region": {
-            "global": "The entire globe i.e. earth."
+            "glb": "The entire globe i.e. earth."
         },
         "required_global_attributes": [
             "activity_id",
