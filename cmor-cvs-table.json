@@ -1,13 +1,14 @@
 {
     "CV": {
         "DRS": {
-            "directory_path_example": "MIP-DRS7/CMIP7/CMIP/CCCma/CanESM6-MR/historical/r1i1p1f1/glb/mon/tas/tavg-h2m-hxy-u/g99/20251104",
+            "directory_path_example": "MIP-DRS7/CMIP7/CMIP/CCCma/CanESM6-MR/esm-hist/r1i1p1f1/glb/mon/tas/tavg-h2m-hxy-u/g99/20251104",
             "directory_path_template": "<drs_specs>/<mip_era>/<activity_id>/<institution_id>/<source_id>/<experiment_id>/<variant_label>/<region>/<frequency>/<variable_id>/<branding_suffix>/<grid_label>/<version>",
-            "filename_path_example": "tas_tavg-h2m-hxy-u_mon_glb_g99_CanESM6-MR_historical_r1i1p1f1_185001-202112.nc",
+            "filename_path_example": "tas_tavg-h2m-hxy-u_mon_glb_g99_CanESM6-MR_esm-hist_r1i1p1f1_185001-202112.nc",
             "filename_path_template": "<variable_id>_<branding_suffix>_<frequency>_<region>_<grid_label>_<source_id>_<experiment_id>_<variant_label>[_<timeRange>].nc"
         },
         "activity_id": {
-            "CMIP": "CMIP core common experiments i.e. the DECK (Diagnostic, Evaluation and Characterization of Klima)"
+            "CMIP": "CMIP core common experiments i.e. the DECK (Diagnostic, Evaluation and Characterization of Klima)",
+            "ScenarioMIP": "Future scenario experiments. Exploration of the future climate under a (selected) range of possible boundary conditions"
         },
         "area_label": {
             "u": "Unmasked i.e. all areas are included/sampled"
@@ -22,6 +23,66 @@
             "MIP-DRS7": "Data reference syntax (DRS) initially designed for use with CMIP7"
         },
         "experiment_id": {
+            "esm-hist": {
+                "activity_id": "CMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM"
+                ],
+                "description": "Simulation of the climate of the recent past (typically meaning 1850 to present-day) with prescribed CO2 emissions (for prescribed CO2 concentration runs, see `historical`)",
+                "end_year": 2021,
+                "experiment": "Simulation of the climate of the recent past (typically meaning 1850 to present-day) with prescribed CO2 emissions (for prescribed CO2 concentration runs, see `historical`)",
+                "experiment_id": "esm-hist",
+                "min_number_yrs_per_sim": 172,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "esm-piControl",
+                "required_model_components": [
+                    "AOGCM",
+                    "BGC"
+                ],
+                "start_year": 1850,
+                "tier": 1
+            },
+            "esm-piControl": {
+                "activity_id": "CMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM"
+                ],
+                "description": "Pre-industrial control simulation with prescribed CO2 emissions (for pre-industrial control with prescribed CO2 concentrations, see `piControl`). Used to characterise natural variability and unforced behaviour.",
+                "end_year": null,
+                "experiment": "Pre-industrial control simulation with prescribed CO2 emissions (for pre-industrial control with prescribed CO2 concentrations, see `piControl`). Used to characterise natural variability and unforced behaviour.",
+                "experiment_id": "esm-piControl",
+                "min_number_yrs_per_sim": 500,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "esm-piControl-spinup",
+                "required_model_components": [
+                    "AOGCM",
+                    "BGC"
+                ],
+                "start_year": null,
+                "tier": 1
+            },
+            "esm-piControl-spinup": {
+                "activity_id": "CMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM"
+                ],
+                "description": "Pre-industrial control spin-up simulation with prescribed CO2 emissions (for spin-up with prescribed CO2 concentrations, see `piControl-spinup`). Used to get the model into a state of approximate radiative equilibrium before starting the piControl simulation.",
+                "end_year": null,
+                "experiment": "Pre-industrial control spin-up simulation with prescribed CO2 emissions (for spin-up with prescribed CO2 concentrations, see `piControl-spinup`). Used to get the model into a state of approximate radiative equilibrium before starting the piControl simulation.",
+                "experiment_id": "esm-piControl-spinup",
+                "min_number_yrs_per_sim": null,
+                "parent_activity_id": null,
+                "parent_experiment_id": null,
+                "required_model_components": [
+                    "AOGCM",
+                    "BGC"
+                ],
+                "start_year": null,
+                "tier": 1
+            },
             "historical": {
                 "activity_id": "CMIP",
                 "additional_allowed_model_components": [
