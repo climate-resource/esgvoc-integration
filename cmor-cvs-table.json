@@ -83,6 +83,286 @@
                 "start_year": null,
                 "tier": 1
             },
+            "esm-scen7-h": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments).",
+                "end_year": 2100,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments).",
+                "experiment_id": "esm-scen7-h",
+                "min_number_yrs_per_sim": 78,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "esm-hist",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2022,
+                "tier": 0
+            },
+            "esm-scen7-h-ext": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments). Extension beyond 2100",
+                "end_year": 2300,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments). Extension beyond 2100",
+                "experiment_id": "esm-scen7-h-ext",
+                "min_number_yrs_per_sim": 51,
+                "parent_activity_id": "ScenarioMIP",
+                "parent_experiment_id": "esm-scen7-h",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2100,
+                "tier": 0
+            },
+            "esm-scen7-hl": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High followed by low (from 2060) emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments).",
+                "end_year": 2100,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High followed by low (from 2060) emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments).",
+                "experiment_id": "esm-scen7-hl",
+                "min_number_yrs_per_sim": 78,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "esm-hist",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2022,
+                "tier": 0
+            },
+            "esm-scen7-hl-ext": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High followed by low (from 2060) emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments). Extension beyond 2100",
+                "end_year": 2300,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High followed by low (from 2060) emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments). Extension beyond 2100",
+                "experiment_id": "esm-scen7-hl-ext",
+                "min_number_yrs_per_sim": 51,
+                "parent_activity_id": "ScenarioMIP",
+                "parent_experiment_id": "esm-scen7-hl",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2100,
+                "tier": 0
+            },
+            "esm-scen7-l": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments).",
+                "end_year": 2100,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments).",
+                "experiment_id": "esm-scen7-l",
+                "min_number_yrs_per_sim": 78,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "esm-hist",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2022,
+                "tier": 0
+            },
+            "esm-scen7-l-ext": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments). Extension beyond 2100",
+                "end_year": 2300,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments). Extension beyond 2100",
+                "experiment_id": "esm-scen7-l-ext",
+                "min_number_yrs_per_sim": 51,
+                "parent_activity_id": "ScenarioMIP",
+                "parent_experiment_id": "esm-scen7-l",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2100,
+                "tier": 0
+            },
+            "esm-scen7-ln": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low followed by negative (steep reductions begin in 2040, negative from TBD) emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments).",
+                "end_year": 2100,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low followed by negative (steep reductions begin in 2040, negative from TBD) emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments).",
+                "experiment_id": "esm-scen7-ln",
+                "min_number_yrs_per_sim": 78,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "esm-hist",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2022,
+                "tier": 0
+            },
+            "esm-scen7-ln-ext": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low followed by negative (steep reductions begin in 2040, negative from TBD) emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments). Extension beyond 2100",
+                "end_year": 2300,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low followed by negative (steep reductions begin in 2040, negative from TBD) emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments). Extension beyond 2100",
+                "experiment_id": "esm-scen7-ln-ext",
+                "min_number_yrs_per_sim": 51,
+                "parent_activity_id": "ScenarioMIP",
+                "parent_experiment_id": "esm-scen7-ln",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2100,
+                "tier": 0
+            },
+            "esm-scen7-m": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments).",
+                "end_year": 2100,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments).",
+                "experiment_id": "esm-scen7-m",
+                "min_number_yrs_per_sim": 78,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "esm-hist",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2022,
+                "tier": 0
+            },
+            "esm-scen7-m-ext": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments). Extension beyond 2100",
+                "end_year": 2300,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments). Extension beyond 2100",
+                "experiment_id": "esm-scen7-m-ext",
+                "min_number_yrs_per_sim": 51,
+                "parent_activity_id": "ScenarioMIP",
+                "parent_experiment_id": "esm-scen7-m",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2100,
+                "tier": 0
+            },
+            "esm-scen7-ml": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium followed by low (from 2040) emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments).",
+                "end_year": 2100,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium followed by low (from 2040) emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments).",
+                "experiment_id": "esm-scen7-ml",
+                "min_number_yrs_per_sim": 78,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "esm-hist",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2022,
+                "tier": 0
+            },
+            "esm-scen7-ml-ext": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium followed by low (from 2040) emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments). Extension beyond 2100",
+                "end_year": 2300,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium followed by low (from 2040) emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments). Extension beyond 2100",
+                "experiment_id": "esm-scen7-ml-ext",
+                "min_number_yrs_per_sim": 51,
+                "parent_activity_id": "ScenarioMIP",
+                "parent_experiment_id": "esm-scen7-ml",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2100,
+                "tier": 0
+            },
+            "esm-scen7-vl": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Very low emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments).",
+                "end_year": 2100,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Very low emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments).",
+                "experiment_id": "esm-scen7-vl",
+                "min_number_yrs_per_sim": 78,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "esm-hist",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2022,
+                "tier": 0
+            },
+            "esm-scen7-vl-ext": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Very low emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments). Extension beyond 2100",
+                "end_year": 2300,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Very low emissions future. Run with prescribed emissions of CO2 (for runs with prescribed concentrations of CO2, see the `scen7-` experiments). Extension beyond 2100",
+                "experiment_id": "esm-scen7-vl-ext",
+                "min_number_yrs_per_sim": 51,
+                "parent_activity_id": "ScenarioMIP",
+                "parent_experiment_id": "esm-scen7-vl",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2100,
+                "tier": 0
+            },
             "historical": {
                 "activity_id": "CMIP",
                 "additional_allowed_model_components": [
@@ -142,6 +422,286 @@
                 ],
                 "start_year": null,
                 "tier": 1
+            },
+            "scen7-h": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments).",
+                "end_year": 2100,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments).",
+                "experiment_id": "scen7-h",
+                "min_number_yrs_per_sim": 78,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "historical",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2022,
+                "tier": 0
+            },
+            "scen7-h-ext": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments). Extension beyond 2100",
+                "end_year": 2300,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments). Extension beyond 2100",
+                "experiment_id": "scen7-h-ext",
+                "min_number_yrs_per_sim": 51,
+                "parent_activity_id": "ScenarioMIP",
+                "parent_experiment_id": "scen7-h",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2100,
+                "tier": 0
+            },
+            "scen7-hl": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High followed by low (from 2060) emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments).",
+                "end_year": 2100,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High followed by low (from 2060) emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments).",
+                "experiment_id": "scen7-hl",
+                "min_number_yrs_per_sim": 78,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "historical",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2022,
+                "tier": 0
+            },
+            "scen7-hl-ext": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High followed by low (from 2060) emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments). Extension beyond 2100",
+                "end_year": 2300,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP High followed by low (from 2060) emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments). Extension beyond 2100",
+                "experiment_id": "scen7-hl-ext",
+                "min_number_yrs_per_sim": 51,
+                "parent_activity_id": "ScenarioMIP",
+                "parent_experiment_id": "scen7-hl",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2100,
+                "tier": 0
+            },
+            "scen7-l": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments).",
+                "end_year": 2100,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments).",
+                "experiment_id": "scen7-l",
+                "min_number_yrs_per_sim": 78,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "historical",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2022,
+                "tier": 0
+            },
+            "scen7-l-ext": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments). Extension beyond 2100",
+                "end_year": 2300,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments). Extension beyond 2100",
+                "experiment_id": "scen7-l-ext",
+                "min_number_yrs_per_sim": 51,
+                "parent_activity_id": "ScenarioMIP",
+                "parent_experiment_id": "scen7-l",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2100,
+                "tier": 0
+            },
+            "scen7-ln": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low followed by negative (steep reductions begin in 2040, negative from TBD) emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments).",
+                "end_year": 2100,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low followed by negative (steep reductions begin in 2040, negative from TBD) emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments).",
+                "experiment_id": "scen7-ln",
+                "min_number_yrs_per_sim": 78,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "historical",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2022,
+                "tier": 0
+            },
+            "scen7-ln-ext": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low followed by negative (steep reductions begin in 2040, negative from TBD) emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments). Extension beyond 2100",
+                "end_year": 2300,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Low followed by negative (steep reductions begin in 2040, negative from TBD) emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments). Extension beyond 2100",
+                "experiment_id": "scen7-ln-ext",
+                "min_number_yrs_per_sim": 51,
+                "parent_activity_id": "ScenarioMIP",
+                "parent_experiment_id": "scen7-ln",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2100,
+                "tier": 0
+            },
+            "scen7-m": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments).",
+                "end_year": 2100,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments).",
+                "experiment_id": "scen7-m",
+                "min_number_yrs_per_sim": 78,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "historical",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2022,
+                "tier": 0
+            },
+            "scen7-m-ext": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments). Extension beyond 2100",
+                "end_year": 2300,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments). Extension beyond 2100",
+                "experiment_id": "scen7-m-ext",
+                "min_number_yrs_per_sim": 51,
+                "parent_activity_id": "ScenarioMIP",
+                "parent_experiment_id": "scen7-m",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2100,
+                "tier": 0
+            },
+            "scen7-ml": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium followed by low (from 2040) emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments).",
+                "end_year": 2100,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium followed by low (from 2040) emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments).",
+                "experiment_id": "scen7-ml",
+                "min_number_yrs_per_sim": 78,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "historical",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2022,
+                "tier": 0
+            },
+            "scen7-ml-ext": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium followed by low (from 2040) emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments). Extension beyond 2100",
+                "end_year": 2300,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Medium followed by low (from 2040) emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments). Extension beyond 2100",
+                "experiment_id": "scen7-ml-ext",
+                "min_number_yrs_per_sim": 51,
+                "parent_activity_id": "ScenarioMIP",
+                "parent_experiment_id": "scen7-ml",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2100,
+                "tier": 0
+            },
+            "scen7-vl": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Very low emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments).",
+                "end_year": 2100,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Very low emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments).",
+                "experiment_id": "scen7-vl",
+                "min_number_yrs_per_sim": 78,
+                "parent_activity_id": "CMIP",
+                "parent_experiment_id": "historical",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2022,
+                "tier": 0
+            },
+            "scen7-vl-ext": {
+                "activity_id": "ScenarioMIP",
+                "additional_allowed_model_components": [
+                    "AER",
+                    "CHEM",
+                    "BGC"
+                ],
+                "description": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Very low emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments). Extension beyond 2100",
+                "end_year": 2300,
+                "experiment": "PLACEHOLDER TBC. CMIP7 ScenarioMIP Very low emissions future. Run with prescribed concentrations of CO2 (for runs with prescribed emissions of CO2, see the `esm-scen7-` experiments). Extension beyond 2100",
+                "experiment_id": "scen7-vl-ext",
+                "min_number_yrs_per_sim": 51,
+                "parent_activity_id": "ScenarioMIP",
+                "parent_experiment_id": "scen7-vl",
+                "required_model_components": [
+                    "AOGCM"
+                ],
+                "start_year": 2100,
+                "tier": 0
             }
         },
         "forcing_index": [
