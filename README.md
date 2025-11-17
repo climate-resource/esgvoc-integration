@@ -32,9 +32,9 @@ uv run esgvoc config switch cmip7-playground-scenarios
 
 # Add very custom CMIP7 setup
 # uv run esgvoc config set 'universe:github_repo=https://github.com/znichollscr/WCRP-universe' 'universe:branch=esgvoc-zn'
-uv run esgvoc config set 'universe:github_repo=https://github.com/znichollscr/WCRP-universe' 'universe:branch=cmip7-scenariomip'
+uv run esgvoc config set 'universe:github_repo=https://github.com/WCRP-CMIP/WCRP-universe' 'universe:branch=esgvoc_dev'
 # uv run esgvoc config add-project cmip7 --custom --repo 'https://github.com/znichollscr/CMIP7-CVs' --branch 'esgvoc-zn'
-uv run esgvoc config add-project cmip7 --custom --repo 'https://github.com/znichollscr/CMIP7-CVs' --branch 'cmip7-scenariomip'
+uv run esgvoc config add-project cmip7 --custom --repo 'https://github.com/WCRP-CMIP/CMIP7-CVs' --branch 'esgvoc_dev'
 
 # Remove default projects
 uv run esgvoc config remove-project -f cmip6
