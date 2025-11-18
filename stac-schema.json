@@ -56,12 +56,40 @@
                 },
                 "cmip7:experiment": {
                     "enum": [
-                        "piControl",
-                        "esm-piControl-spinup",
-                        "esm-piControl",
+                        "esm-hist",
+                        "esm-scen7-m-ext",
+                        "esm-scen7-vl-ext",
+                        "scen7-vl",
                         "historical",
+                        "scen7-ml-ext",
+                        "scen7-hl-ext",
+                        "scen7-h-ext",
+                        "esm-scen7-hl-ext",
+                        "esm-scen7-ln-ext",
+                        "esm-scen7-ml",
+                        "esm-scen7-ln",
+                        "piControl",
                         "piControl-spinup",
-                        "esm-hist"
+                        "scen7-l",
+                        "scen7-ln-ext",
+                        "scen7-ml",
+                        "esm-piControl",
+                        "scen7-h",
+                        "esm-scen7-m",
+                        "scen7-vl-ext",
+                        "esm-scen7-h",
+                        "scen7-ln",
+                        "esm-scen7-vl",
+                        "scen7-m",
+                        "scen7-l-ext",
+                        "esm-scen7-l-ext",
+                        "scen7-hl",
+                        "esm-scen7-h-ext",
+                        "esm-scen7-l",
+                        "esm-scen7-ml-ext",
+                        "scen7-m-ext",
+                        "esm-scen7-hl",
+                        "esm-piControl-spinup"
                     ],
                     "type": "string"
                 },
@@ -87,8 +115,8 @@
                 },
                 "cmip7:license": {
                     "enum": [
-                        "CC0-1-0",
-                        "CC-BY-4-0"
+                        "CC-BY-4-0",
+                        "CC0-1-0"
                     ],
                     "type": "string"
                 },
@@ -100,8 +128,8 @@
                 },
                 "cmip7:organisation": {
                     "enum": [
-                        "IPSL",
-                        "CCCma"
+                        "CCCma",
+                        "IPSL"
                     ],
                     "type": "string"
                 },
