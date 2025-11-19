@@ -50,7 +50,7 @@
                     "CHEM"
                 ],
                 "description": "Pre-industrial control simulation with prescribed CO2 emissions (for pre-industrial control with prescribed CO2 concentrations, see `piControl`). Used to characterise natural variability and unforced behaviour.",
-                "end_year": null,
+                "end_year": "",
                 "experiment": "Pre-industrial control simulation with prescribed CO2 emissions (for pre-industrial control with prescribed CO2 concentrations, see `piControl`). Used to characterise natural variability and unforced behaviour.",
                 "experiment_id": "esm-piControl",
                 "min_number_yrs_per_sim": 500,
@@ -60,7 +60,7 @@
                     "AOGCM",
                     "BGC"
                 ],
-                "start_year": null,
+                "start_year": "",
                 "tier": 1
             },
             "esm-piControl-spinup": {
@@ -70,17 +70,17 @@
                     "CHEM"
                 ],
                 "description": "Pre-industrial control spin-up simulation with prescribed CO2 emissions (for spin-up with prescribed CO2 concentrations, see `piControl-spinup`). Used to get the model into a state of approximate radiative equilibrium before starting the piControl simulation.",
-                "end_year": null,
+                "end_year": "",
                 "experiment": "Pre-industrial control spin-up simulation with prescribed CO2 emissions (for spin-up with prescribed CO2 concentrations, see `piControl-spinup`). Used to get the model into a state of approximate radiative equilibrium before starting the piControl simulation.",
                 "experiment_id": "esm-piControl-spinup",
-                "min_number_yrs_per_sim": null,
-                "parent_activity_id": null,
-                "parent_experiment_id": null,
+                "min_number_yrs_per_sim": "",
+                "parent_activity_id": "",
+                "parent_experiment_id": "",
                 "required_model_components": [
                     "AOGCM",
                     "BGC"
                 ],
-                "start_year": null,
+                "start_year": "",
                 "tier": 1
             },
             "esm-scen7-h": {
@@ -391,7 +391,7 @@
                     "BGC"
                 ],
                 "description": "Pre-industrial control simulation. Used to characterise natural variability and unforced behaviour.",
-                "end_year": null,
+                "end_year": "",
                 "experiment": "Pre-industrial control simulation. Used to characterise natural variability and unforced behaviour.",
                 "experiment_id": "piControl",
                 "min_number_yrs_per_sim": 500,
@@ -400,7 +400,7 @@
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start_year": null,
+                "start_year": "",
                 "tier": 1
             },
             "piControl-spinup": {
@@ -411,16 +411,16 @@
                     "BGC"
                 ],
                 "description": "Pre-industrial control spin-up simulation. Used to get the model into a state of approximate radiative equilibrium before starting the piControl simulation.",
-                "end_year": null,
+                "end_year": "",
                 "experiment": "Pre-industrial control spin-up simulation. Used to get the model into a state of approximate radiative equilibrium before starting the piControl simulation.",
                 "experiment_id": "piControl-spinup",
-                "min_number_yrs_per_sim": null,
-                "parent_activity_id": null,
-                "parent_experiment_id": null,
+                "min_number_yrs_per_sim": "",
+                "parent_activity_id": "",
+                "parent_experiment_id": "",
                 "required_model_components": [
                     "AOGCM"
                 ],
-                "start_year": null,
+                "start_year": "",
                 "tier": 1
             },
             "scen7-h": {
