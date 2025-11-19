@@ -11,6 +11,7 @@
             "ScenarioMIP": "Future scenario experiments. Exploration of the future climate under a (selected) range of possible boundary conditions"
         },
         "area_label": {
+            "sea": "Data only applies where there is sea (both ice-free sea and areas with sea ice)",
             "u": "Unmasked i.e. all areas are included/sampled"
         },
         "branding_suffix": "<temporal_label>-<vertical_label>-<horizontal_label>-<area_label>",
