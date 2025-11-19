@@ -56,40 +56,40 @@
                 },
                 "cmip7:experiment": {
                     "enum": [
-                        "scen7-hl",
+                        "esm-piControl-spinup",
                         "piControl",
-                        "scen7-ml",
-                        "esm-scen7-m",
-                        "esm-scen7-vl-ext",
-                        "esm-scen7-ml-ext",
+                        "esm-scen7-ml",
+                        "scen7-h",
                         "esm-scen7-l-ext",
+                        "esm-hist",
+                        "scen7-ml-ext",
+                        "piControl-spinup",
+                        "scen7-hl",
+                        "esm-scen7-vl",
+                        "scen7-m",
+                        "esm-scen7-ml-ext",
+                        "esm-scen7-h-ext",
                         "esm-scen7-m-ext",
                         "scen7-ln",
-                        "esm-scen7-ln-ext",
-                        "esm-scen7-h",
-                        "scen7-ml-ext",
-                        "scen7-m",
-                        "scen7-h-ext",
-                        "scen7-vl",
-                        "esm-piControl-spinup",
-                        "historical",
-                        "scen7-ln-ext",
-                        "scen7-h",
-                        "scen7-vl-ext",
-                        "scen7-m-ext",
-                        "esm-scen7-h-ext",
-                        "esm-scen7-vl",
-                        "esm-scen7-hl-ext",
-                        "esm-scen7-l",
-                        "esm-hist",
-                        "piControl-spinup",
                         "esm-scen7-hl",
                         "scen7-l",
-                        "scen7-l-ext",
-                        "esm-piControl",
-                        "esm-scen7-ml",
                         "esm-scen7-ln",
-                        "scen7-hl-ext"
+                        "scen7-h-ext",
+                        "scen7-m-ext",
+                        "scen7-ml",
+                        "historical",
+                        "esm-scen7-h",
+                        "esm-scen7-hl-ext",
+                        "scen7-hl-ext",
+                        "scen7-ln-ext",
+                        "esm-scen7-l",
+                        "scen7-vl-ext",
+                        "scen7-vl",
+                        "esm-scen7-m",
+                        "esm-piControl",
+                        "esm-scen7-vl-ext",
+                        "scen7-l-ext",
+                        "esm-scen7-ln-ext"
                     ],
                     "type": "string"
                 },
@@ -115,8 +115,8 @@
                 },
                 "cmip7:license": {
                     "enum": [
-                        "CC0-1-0",
-                        "CC-BY-4-0"
+                        "CC-BY-4-0",
+                        "CC0-1-0"
                     ],
                     "type": "string"
                 },
@@ -128,8 +128,8 @@
                 },
                 "cmip7:organisation": {
                     "enum": [
-                        "IPSL",
-                        "CCCma"
+                        "CCCma",
+                        "IPSL"
                     ],
                     "type": "string"
                 },

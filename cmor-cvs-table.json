@@ -16,7 +16,7 @@
         "branded_variable": "<variable_id>_<branding_suffix>",
         "branding_suffix": "<temporal_label>-<vertical_label>-<horizontal_label>-<area_label>",
         "creation_date": [
-            "^(?P<year>\\d{4})-(?P<month>\\d{2})-(?P<day>\\d{2})T(?P<hour>\\d{2}):(?P<minute>\\d{2}):(?P<second>\\d{2})Z$"
+            "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
         ],
         "data_specs_version": "MIPDS7-0p0p1",
         "drs_specs": {
@@ -705,7 +705,7 @@
             }
         },
         "forcing_index": [
-            "^f(?P<forcing_index>\\d+)$"
+            "^f\\d+$"
         ],
         "frequency": {
             "mon": {
@@ -720,7 +720,7 @@
             "hxy": "Sampled in both the latitude and longitude directions. This if often referred to as 'gridded' data."
         },
         "initialization_index": [
-            "^i(?P<initialization_index>(\\d{4}\\d{2}[abcde]?|\\d+))$"
+            "^i(\\d{4}\\d{2}[abcde]?|\\d+)$"
         ],
         "institution_id": {
             "CCCma": "Environment and Climate Change Canada",
@@ -744,13 +744,13 @@
             "100-km": "Should drs name be '100-km' or '100 km'? Having whitespace in drs name isn't ideal, but if this will only ever be used in global attributes, it won't technically break things. 100km nominal resolution."
         },
         "physics_index": [
-            "^p(?P<physics_index>\\d+)$"
+            "^p\\d+$"
         ],
         "product": {
             "model-output": "Output from a model (i.e. numerical representation), in this context typically of the climate system or a component thereof."
         },
         "realization_index": [
-            "^r(?P<realization_index>\\d+)$"
+            "^r\\d+$"
         ],
         "realm": {
             "atmos": "Dataset which applies (or mostly applies) to or is reported in the atmosphere part of the earth system."
@@ -805,10 +805,10 @@
             "tavg": "Time average i.e. the value for each time period is the average of the quantity over the time period."
         },
         "tracking_id": [
-            "^hdl:(?P<handle_dot_net_prefix>21.14107)/(?P<uuid>[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12})$"
+            "^hdl:21.14107/[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12}$"
         ],
         "variant_label": [
-            "^r(?P<realization_index>\\d+)i(?P<initialization_index>(\\d{4}\\d{2}[abcde]?|\\d+))p(?P<physics_index>\\d+)f(?P<forcing_index>\\d+)$"
+            "^r\\d+i(\\d{4}\\d{2}[abcde]?|\\d+)p\\d+f\\d+$"
         ],
         "vertical_label": {
             "h2m": "Sampled at a height of (approximately) 2m above the surface"

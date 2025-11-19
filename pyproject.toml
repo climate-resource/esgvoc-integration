@@ -16,7 +16,7 @@ dependencies = [
 
 [[tool.uv.sources.esgvoc]]
 git = "https://github.com/znichollscr/esgf-vocab.git"
-rev = "0a5417dd3ff15ad2a7467df521be958191ac286a"
+rev = "9cc4b7d61b43b98ce246de2f35bc1e9112bf7158"
 # git = "https://github.com/ESGF/esgf-vocab.git"
 # rev = "20d51df57f5f380970c10949b6741169782a3a0c"
 # path = "../esgf-vocab"
