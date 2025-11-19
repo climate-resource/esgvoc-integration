@@ -13,7 +13,6 @@
         "area_label": {
             "u": "Unmasked i.e. all areas are included/sampled"
         },
-        "branded_variable": "<variable_id>_<branding_suffix>",
         "branding_suffix": "<temporal_label>-<vertical_label>-<horizontal_label>-<area_label>",
         "creation_date": [
             "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
