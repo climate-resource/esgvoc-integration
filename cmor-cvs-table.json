@@ -14,9 +14,9 @@
             "sea": "Data only applies where there is sea (both ice-free sea and areas with sea ice)",
             "u": "Unmasked i.e. all areas are included/sampled"
         },
-        "branding_suffix": "<temporal_label>-<vertical_label>-<horizontal_label>-<area_label>",
+        "branding_suffix": "<temporal_label><vertical_label><horizontal_label><area_label>",
         "creation_date": [
-            "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+            "^[[:digit:]]\\{4\\}-[[:digit:]]\\{2\\}-[[:digit:]]\\{2\\}T[[:digit:]]\\{2\\}:[[:digit:]]\\{2\\}:[[:digit:]]\\{2\\}Z$"
         ],
         "data_specs_version": "MIPDS7-0p0p1",
         "drs_specs": {
@@ -901,7 +901,7 @@
             }
         },
         "forcing_index": [
-            "^f\\d+$"
+            "^f[[:digit:]]\\{1,\\}$"
         ],
         "frequency": {
             "mon": {
@@ -916,7 +916,7 @@
             "hxy": "Sampled in both the latitude and longitude directions. This if often referred to as 'gridded' data."
         },
         "initialization_index": [
-            "^i(\\d{4}\\d{2}[abcde]?|\\d+)$"
+            "^i\\([[:digit:]]\\{4\\}[[:digit:]]\\{2\\}[abcde]\\{0,\\}|[[:digit:]]\\{1,\\}\\)$"
         ],
         "institution_id": {
             "CCCma": "Environment and Climate Change Canada",
@@ -940,16 +940,17 @@
             "100-km": "Should drs name be '100-km' or '100 km'? Having whitespace in drs name isn't ideal, but if this will only ever be used in global attributes, it won't technically break things. 100km nominal resolution."
         },
         "physics_index": [
-            "^p\\d+$"
+            "^p[[:digit:]]\\{1,\\}$"
         ],
         "product": {
             "model-output": "Output from a model (i.e. numerical representation), in this context typically of the climate system or a component thereof."
         },
         "realization_index": [
-            "^r\\d+$"
+            "^r[[:digit:]]\\{1,\\}$"
         ],
         "realm": {
-            "atmos": "Dataset which applies (or mostly applies) to or is reported in the atmosphere part of the earth system."
+            "atmos": "Dataset which applies (or mostly applies) to or is reported in the atmosphere part of the earth system.",
+            "ocean": "Dataset which applies (or mostly applies) to or is reported in the ocean part of the earth system."
         },
         "region": {
             "glb": "The entire globe i.e. earth."
@@ -1001,13 +1002,14 @@
             "tavg": "Time average i.e. the value for each time period is the average of the quantity over the time period."
         },
         "tracking_id": [
-            "^hdl:21.14107/[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12}$"
+            "^hdl:21.14107/[0-9A-Fa-f]\\{8\\}-[0-9A-Fa-f]\\{4\\}-4[0-9A-Fa-f]\\{3\\}-[89ABab][0-9A-Fa-f]\\{3\\}-[0-9A-Fa-f]\\{12\\}$"
         ],
         "variant_label": [
-            "^r\\d+i(\\d{4}\\d{2}[abcde]?|\\d+)p\\d+f\\d+$"
+            "^r[[:digit:]]\\{1,\\}i\\([[:digit:]]\\{4\\}[[:digit:]]\\{2\\}[abcde]\\{0,\\}|[[:digit:]]\\{1,\\}\\)p[[:digit:]]\\{1,\\}f[[:digit:]]\\{1,\\}$"
         ],
         "vertical_label": {
-            "h2m": "Sampled at a height of (approximately) 2m above the surface"
+            "h2m": "Sampled at a height of (approximately) 2m above the surface",
+            "u": "Unspecified - no dimension provides information about the vertical location"
         }
     }
 }

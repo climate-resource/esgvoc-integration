@@ -76,6 +76,7 @@ uv run esgvoc drsvalid cmip7 directory MIP-DRS7/CMIP7/CMIP/CCCma/CanESM6-MR/piCo
 uv run esgvoc drsvalid cmip7 filename tas_tavg-h2m-hxy-u_mon_glb_g99_CanESM6-MR_historical_r1i1p1f1_185001-202112.nc --verbose
 
 # Export CMOR tables
+# TODO: sort out exporting regexps that don't use or as this isn't supported by CMOR's regexp
 uv run esgvoc cmor-export-cvs-table
 # (or to a file)
 uv run esgvoc cmor-export-cvs-table --out-path cmor-cvs-example.json
