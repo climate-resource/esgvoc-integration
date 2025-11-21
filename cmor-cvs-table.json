@@ -632,9 +632,63 @@
             "^f[[:digit:]]\\{1,\\}$"
         ],
         "frequency": {
+            "1hr": {
+                "approx_interval": 0.041666666666666664,
+                "description": "Hourly samples."
+            },
+            "1hrCM": {
+                "approx_interval": 0.041666666666666664,
+                "description": "Monthly climatology (i.e. mean over a number of months) at hourly resolution."
+            },
+            "1hrPt": {
+                "approx_interval": 0.041666666666666664,
+                "description": "Hourly samples. This is a legacy label that indicated that the sample was a point sample i.e. represented the value at a specific point in time. This information is now conveyed via the temporal label instead."
+            },
+            "3hr": {
+                "approx_interval": 0.125,
+                "description": "Three hourly samples."
+            },
+            "3hrPt": {
+                "approx_interval": 0.125,
+                "description": "Three hourly samples. This is a legacy label that indicated that the sample was a point sample i.e. represented the value at a specific point in time. This information is now conveyed via the temporal label instead."
+            },
+            "6hr": {
+                "approx_interval": 0.25,
+                "description": "Three hourly samples."
+            },
+            "6hrPt": {
+                "approx_interval": 0.25,
+                "description": "Six hourly samples. This is a legacy label that indicated that the sample was a point sample i.e. represented the value at a specific point in time. This information is now conveyed via the temporal label instead."
+            },
+            "day": {
+                "approx_interval": 1.0,
+                "description": "Daily samples."
+            },
+            "dec": {
+                "approx_interval": 3652.5,
+                "description": "Decadal samples. Note that this means that the time interval between each sample is not constant for some calendars."
+            },
+            "fx": "fixed (time invariant) field",
             "mon": {
                 "approx_interval": 30.0,
                 "description": "Monthly samples. Note that this means that the time interval between each sample is not constant for some calendars."
+            },
+            "monC": {
+                "approx_interval": 30.0,
+                "description": "Monthly climatology (i.e. mean over a number of months) at monthly resolution. Note that this means that the time interval between each sample is not constant for some calendars."
+            },
+            "monPt": {
+                "approx_interval": 30.0,
+                "description": "Monthly samples. This is a legacy label that indicated that the sample was a point sample i.e. represented the value at a specific point in time. This information is now conveyed via the temporal label instead."
+            },
+            "subhrPt": "fixed (time invariant) field",
+            "yr": {
+                "approx_interval": 365.25,
+                "description": "Yearly (i.e. annual) samples. Note that this means that the time interval between each sample is not constant for some calendars."
+            },
+            "yrPt": {
+                "approx_interval": 365.25,
+                "description": "Yearly (i.e. annual) samples. This is a legacy label that indicated that the sample was a point sample i.e. represented the value at a specific point in time. This information is now conveyed via the temporal label instead."
             }
         },
         "grid_label": {
