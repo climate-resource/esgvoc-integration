@@ -755,7 +755,12 @@
             "seaIce": "Dataset which applies (or mostly applies) to or is reported on sea ice."
         },
         "region": {
-            "glb": "The entire globe i.e. earth."
+            "30S-90S": "The area of the globe south of the latitude 30S.",
+            "ata": "Antarcica.",
+            "glb": "The entire globe i.e. earth.",
+            "grl": "Greenland.",
+            "nh": "The northern hemisphere.",
+            "sh": "The southern hemisphere."
         },
         "required_global_attributes": [
             "activity_id",
