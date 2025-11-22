@@ -56,40 +56,40 @@
                 },
                 "cmip7:experiment": {
                     "enum": [
-                        "esm-piControl-spinup",
-                        "esm-scen7-m",
-                        "scen7-l",
-                        "scen7-m-ext",
-                        "esm-scen7-h",
-                        "scen7-h-ext",
-                        "scen7-m",
-                        "esm-scen7-ln-ext",
-                        "scen7-vl",
-                        "esm-scen7-h-ext",
-                        "esm-scen7-hl-ext",
                         "scen7-vl-ext",
-                        "scen7-hl-ext",
-                        "scen7-l-ext",
-                        "esm-scen7-hl",
-                        "historical",
-                        "scen7-ln",
-                        "scen7-h",
-                        "scen7-hl",
-                        "piControl-spinup",
-                        "esm-hist",
-                        "esm-scen7-m-ext",
-                        "esm-scen7-vl-ext",
-                        "scen7-ml-ext",
-                        "piControl",
-                        "scen7-ml",
                         "esm-scen7-l-ext",
-                        "esm-piControl",
-                        "esm-scen7-ml",
+                        "scen7-hl",
                         "esm-scen7-l",
-                        "esm-scen7-ln",
-                        "esm-scen7-ml-ext",
+                        "esm-scen7-h-ext",
+                        "scen7-l-ext",
+                        "esm-scen7-ln-ext",
+                        "esm-scen7-hl",
+                        "esm-scen7-m-ext",
+                        "piControl-spinup",
+                        "scen7-ln",
+                        "scen7-ml-ext",
+                        "scen7-m-ext",
+                        "piControl",
+                        "esm-scen7-vl-ext",
+                        "historical",
+                        "esm-scen7-ml",
+                        "scen7-m",
+                        "scen7-l",
                         "scen7-ln-ext",
-                        "esm-scen7-vl"
+                        "esm-scen7-ln",
+                        "scen7-ml",
+                        "scen7-hl-ext",
+                        "esm-scen7-h",
+                        "scen7-h",
+                        "esm-piControl-spinup",
+                        "esm-scen7-vl",
+                        "scen7-vl",
+                        "scen7-h-ext",
+                        "esm-scen7-ml-ext",
+                        "esm-scen7-hl-ext",
+                        "esm-hist",
+                        "esm-piControl",
+                        "esm-scen7-m"
                     ],
                     "type": "string"
                 },
@@ -99,22 +99,22 @@
                 },
                 "cmip7:frequency": {
                     "enum": [
-                        "mon",
-                        "subhrPt",
-                        "yrPt",
+                        "6hrPt",
+                        "3hr",
+                        "monC",
+                        "yr",
+                        "fx",
+                        "day",
                         "1hrCM",
                         "3hrPt",
-                        "monPt",
-                        "3hr",
-                        "fx",
-                        "dec",
                         "6hr",
                         "1hr",
-                        "yr",
                         "1hrPt",
-                        "6hrPt",
-                        "day",
-                        "monC"
+                        "yrPt",
+                        "dec",
+                        "monPt",
+                        "subhrPt",
+                        "mon"
                     ],
                     "type": "string"
                 },
@@ -130,34 +130,34 @@
                 },
                 "cmip7:license": {
                     "enum": [
-                        "CC-BY-4-0",
-                        "CC0-1-0"
+                        "CC0-1-0",
+                        "CC-BY-4-0"
                     ],
                     "type": "string"
                 },
                 "cmip7:nominal_resolution": {
                     "enum": [
-                        "5000-m",
+                        "1000-m",
+                        "500-km",
+                        "500-m",
+                        "100-km",
+                        "10000-km",
+                        "5000-km",
                         "10-km",
                         "1000-km",
                         "250-km",
                         "50-km",
-                        "100-km",
+                        "5000-m",
                         "25-km",
-                        "10000-km",
-                        "5000-km",
-                        "2500-km",
-                        "500-m",
-                        "1000-m",
                         "2500-m",
-                        "500-km"
+                        "2500-km"
                     ],
                     "type": "string"
                 },
                 "cmip7:organisation": {
                     "enum": [
-                        "IPSL",
-                        "CCCma"
+                        "CCCma",
+                        "IPSL"
                     ],
                     "type": "string"
                 },
@@ -182,14 +182,14 @@
                 "cmip7:realm": {
                     "items": {
                         "enum": [
+                            "ocean",
+                            "aerosol",
+                            "seaIce",
                             "land",
                             "ocnBgchem",
-                            "atmos",
-                            "seaIce",
-                            "landIce",
                             "atmosChem",
-                            "ocean",
-                            "aerosol"
+                            "landIce",
+                            "atmos"
                         ],
                         "minItems": 1,
                         "type": "string"
