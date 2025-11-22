@@ -718,7 +718,12 @@
             "g99": "Demo entry - do not use"
         },
         "horizontal_label": {
-            "hxy": "Sampled in both the latitude and longitude directions. This if often referred to as 'gridded' data."
+            "hm": "No other horizontal label. This usually means the data is a horizontal mean (therefore has no horizontal dimensions).",
+            "hs": "Data reported at specific sites.",
+            "ht": "Data along a transect. This is usually some aggregate (sum, mean etc.) along the transect(s).",
+            "hxy": "Data on x-y (often lat-lon) grid, also referred to as gridded data.",
+            "hy": "Data on y (often just lat) grid. This is usually zonal-mean or zonal-sum or some other zonal-aggregate data.",
+            "hyb": "Data on y (often just lat) grids in specific basins. This is usually zonal-mean or zonal-sum or some other zonal-aggregate data."
         },
         "initialization_index": [
             "^i[[:digit:]]\\{4\\}[[:digit:]]\\{2\\}[abcde]\\{0,\\}$",

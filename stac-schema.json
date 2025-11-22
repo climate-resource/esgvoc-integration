@@ -56,40 +56,40 @@
                 },
                 "cmip7:experiment": {
                     "enum": [
-                        "scen7-vl-ext",
-                        "scen7-m",
+                        "esm-scen7-l",
+                        "piControl",
+                        "esm-scen7-m-ext",
                         "scen7-hl",
+                        "esm-scen7-ln",
+                        "scen7-h-ext",
+                        "esm-scen7-h",
+                        "scen7-ln-ext",
+                        "esm-scen7-ln-ext",
+                        "esm-piControl",
+                        "scen7-ln",
+                        "scen7-l",
+                        "esm-scen7-ml-ext",
+                        "scen7-vl-ext",
+                        "esm-scen7-l-ext",
+                        "scen7-l-ext",
+                        "scen7-ml-ext",
                         "scen7-m-ext",
                         "esm-hist",
-                        "esm-scen7-ml-ext",
-                        "esm-scen7-l",
-                        "esm-scen7-hl",
-                        "scen7-ln-ext",
-                        "esm-scen7-vl-ext",
-                        "esm-scen7-m-ext",
+                        "esm-piControl-spinup",
                         "esm-scen7-m",
                         "scen7-ml",
-                        "esm-scen7-l-ext",
-                        "esm-scen7-ln",
-                        "scen7-h",
-                        "scen7-ml-ext",
-                        "esm-piControl-spinup",
                         "scen7-vl",
-                        "historical",
+                        "esm-scen7-hl",
+                        "esm-scen7-vl-ext",
                         "piControl-spinup",
-                        "esm-scen7-h",
-                        "esm-scen7-ln-ext",
-                        "scen7-l-ext",
-                        "esm-scen7-vl",
-                        "piControl",
-                        "scen7-hl-ext",
                         "esm-scen7-hl-ext",
-                        "scen7-l",
-                        "esm-piControl",
-                        "scen7-h-ext",
+                        "esm-scen7-vl",
+                        "scen7-m",
+                        "esm-scen7-h-ext",
                         "esm-scen7-ml",
-                        "scen7-ln",
-                        "esm-scen7-h-ext"
+                        "scen7-h",
+                        "scen7-hl-ext",
+                        "historical"
                     ],
                     "type": "string"
                 },
@@ -99,22 +99,22 @@
                 },
                 "cmip7:frequency": {
                     "enum": [
-                        "monC",
-                        "1hr",
-                        "1hrPt",
-                        "mon",
-                        "yrPt",
-                        "day",
-                        "subhrPt",
-                        "dec",
-                        "6hrPt",
-                        "fx",
-                        "monPt",
                         "yr",
                         "6hr",
-                        "3hr",
+                        "mon",
+                        "dec",
+                        "1hr",
+                        "yrPt",
+                        "day",
+                        "fx",
                         "3hrPt",
-                        "1hrCM"
+                        "6hrPt",
+                        "3hr",
+                        "subhrPt",
+                        "monC",
+                        "1hrCM",
+                        "monPt",
+                        "1hrPt"
                     ],
                     "type": "string"
                 },
@@ -130,34 +130,34 @@
                 },
                 "cmip7:license": {
                     "enum": [
-                        "CC0-1-0",
-                        "CC-BY-4-0"
+                        "CC-BY-4-0",
+                        "CC0-1-0"
                     ],
                     "type": "string"
                 },
                 "cmip7:nominal_resolution": {
                     "enum": [
                         "100-km",
-                        "500-m",
-                        "25-km",
-                        "500-km",
                         "1000-m",
-                        "5000-km",
+                        "10000-km",
+                        "25-km",
                         "2500-m",
-                        "2500-km",
-                        "50-km",
                         "250-km",
+                        "5000-km",
+                        "1000-km",
                         "10-km",
                         "5000-m",
-                        "10000-km",
-                        "1000-km"
+                        "2500-km",
+                        "500-km",
+                        "50-km",
+                        "500-m"
                     ],
                     "type": "string"
                 },
                 "cmip7:organisation": {
                     "enum": [
-                        "IPSL",
-                        "CCCma"
+                        "CCCma",
+                        "IPSL"
                     ],
                     "type": "string"
                 },
@@ -182,14 +182,14 @@
                 "cmip7:realm": {
                     "items": {
                         "enum": [
-                            "landIce",
-                            "land",
-                            "seaIce",
-                            "ocean",
-                            "atmosChem",
-                            "ocnBgchem",
+                            "atmos",
                             "aerosol",
-                            "atmos"
+                            "atmosChem",
+                            "land",
+                            "landIce",
+                            "ocean",
+                            "seaIce",
+                            "ocnBgchem"
                         ],
                         "minItems": 1,
                         "type": "string"
