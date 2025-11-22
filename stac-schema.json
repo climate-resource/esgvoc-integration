@@ -34,24 +34,19 @@
                 "^(?!cmip7:)": {}
             },
             "properties": {
-                "cmip7:contributor": {
-                    "enum": [
-                        "CCCma",
-                        "IPSL"
-                    ],
-                    "type": "string"
-                },
                 "cmip7:conventions": {
                     "items": {
+                        "enum": [
+                            "CF-1.12"
+                        ],
                         "minItems": 1,
-                        "pattern": "^CF-(?P<version>\\d+\\.\\d+)$",
                         "type": "string"
                     },
                     "type": "array"
                 },
                 "cmip7:data_specs_version": {
                     "enum": [
-                        "MIPDS7-2025p10p1"
+                        "MIPDS7-0p0p1"
                     ],
                     "type": "string"
                 },
@@ -61,9 +56,40 @@
                 },
                 "cmip7:experiment": {
                     "enum": [
+                        "esm-hist",
+                        "esm-piControl",
+                        "esm-piControl-spinup",
+                        "esm-scen7-h",
+                        "esm-scen7-h-ext",
+                        "esm-scen7-hl",
+                        "esm-scen7-hl-ext",
+                        "esm-scen7-l",
+                        "esm-scen7-l-ext",
+                        "esm-scen7-ln",
+                        "esm-scen7-ln-ext",
+                        "esm-scen7-m",
+                        "esm-scen7-m-ext",
+                        "esm-scen7-ml",
+                        "esm-scen7-ml-ext",
+                        "esm-scen7-vl",
+                        "esm-scen7-vl-ext",
                         "historical",
                         "piControl",
-                        "piControl-spinup"
+                        "piControl-spinup",
+                        "scen7-h",
+                        "scen7-h-ext",
+                        "scen7-hl",
+                        "scen7-hl-ext",
+                        "scen7-l",
+                        "scen7-l-ext",
+                        "scen7-ln",
+                        "scen7-ln-ext",
+                        "scen7-m",
+                        "scen7-m-ext",
+                        "scen7-ml",
+                        "scen7-ml-ext",
+                        "scen7-vl",
+                        "scen7-vl-ext"
                     ],
                     "type": "string"
                 },
@@ -73,7 +99,22 @@
                 },
                 "cmip7:frequency": {
                     "enum": [
-                        "mon"
+                        "1hr",
+                        "1hrCM",
+                        "1hrPt",
+                        "3hr",
+                        "3hrPt",
+                        "6hr",
+                        "6hrPt",
+                        "day",
+                        "dec",
+                        "fx",
+                        "mon",
+                        "monC",
+                        "monPt",
+                        "subhrPt",
+                        "yr",
+                        "yrPt"
                     ],
                     "type": "string"
                 },
@@ -96,7 +137,27 @@
                 },
                 "cmip7:nominal_resolution": {
                     "enum": [
-                        "100-km"
+                        "10-km",
+                        "100-km",
+                        "1000-km",
+                        "1000-m",
+                        "10000-km",
+                        "25-km",
+                        "250-km",
+                        "2500-km",
+                        "2500-m",
+                        "50-km",
+                        "500-km",
+                        "500-m",
+                        "5000-km",
+                        "5000-m"
+                    ],
+                    "type": "string"
+                },
+                "cmip7:organisation": {
+                    "enum": [
+                        "CCCma",
+                        "IPSL"
                     ],
                     "type": "string"
                 },
@@ -121,7 +182,14 @@
                 "cmip7:realm": {
                     "items": {
                         "enum": [
-                            "atmos"
+                            "aerosol",
+                            "atmos",
+                            "atmosChem",
+                            "land",
+                            "landIce",
+                            "ocean",
+                            "ocnBgchem",
+                            "seaIce"
                         ],
                         "minItems": 1,
                         "type": "string"
@@ -190,16 +258,6 @@
                 },
                 {
                     "required": [
-                        "file:checksum"
-                    ]
-                },
-                {
-                    "required": [
-                        "file:size"
-                    ]
-                },
-                {
-                    "required": [
                         "protocol"
                     ]
                 },
@@ -260,11 +318,6 @@
                 },
                 {
                     "required": [
-                        "cmip7:contributor"
-                    ]
-                },
-                {
-                    "required": [
                         "cmip7:conventions"
                     ]
                 },
@@ -311,6 +364,11 @@
                 {
                     "required": [
                         "cmip7:nominal_resolution"
+                    ]
+                },
+                {
+                    "required": [
+                        "cmip7:organisation"
                     ]
                 },
                 {
@@ -446,6 +504,11 @@
                 {
                     "contains": {
                         "const": "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+                    }
+                },
+                {
+                    "contains": {
+                        "const": "https://stac-extensions.github.io/alternate-assets//schema.json"
                     }
                 },
                 {
